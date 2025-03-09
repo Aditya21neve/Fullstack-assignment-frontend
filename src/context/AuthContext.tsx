@@ -48,7 +48,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
 
       if (response.data.user) {
-        setUser(response.data.user);
+        // setUser(response.data.user);
         return true;
       }
       return false;

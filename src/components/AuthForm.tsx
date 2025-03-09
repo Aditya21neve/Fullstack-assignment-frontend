@@ -24,6 +24,13 @@ export function AuthForm() {
       success = await register(name, email, password);
       if (!success) {
         setError("Registration failed. Please check the console for details.");
+      } else {
+        setIsLogin(true);
+        setName("");
+        setEmail("");
+        setPassword("");
+        setError("");
+        alert("Registration successful! You can now log in.");
       }
     }
   };
